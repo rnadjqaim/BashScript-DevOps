@@ -1,0 +1,33 @@
+#!/bin/bash 
+echo "welcome to bash script"
+#checking system uptime 
+echo "The uptime of the system is  :"
+uptime 
+echo 
+
+
+#checking Memory utlization 
+echo "Memory utlization  :"
+free -m
+echo 
+
+ 
+#checking Memory utlization 
+echo "Disk utilization  :"
+df -h
+echo 
+
+
+#!/bin/bash 
+apt install wget unzip httpd -y
+
+
+sud systemctl start httpd 
+sud systemctl enable httpd 
+
+mkdir -p /tmp/webfiles
+
+cd /tmp/webfiles
+# this code to download website from url 
+wget httpd ://www.vardot.com/2022_vardot.zip
+suo cp -r 2022_vardot.zip/* /var/www/html/
