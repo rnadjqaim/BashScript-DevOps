@@ -1,0 +1,11 @@
+#!bash/shell
+SKILLS="DevOps"
+echo $SKILLS
+
+PRE='DevOpS'
+echo $PRE
+echo " i have alot of passion for DevOps Engineering'
+
+#back tex
+UP=`uptime`
+
